@@ -11,7 +11,7 @@ namespace WebPrueba.Controllers
     public class MovieController : Controller
     {
         // GET: MovieController1
-        private MovieDBContext db ;
+        private readonly MovieDBContext db ;
 		private readonly ILogger<MovieController> _logger;
 
 		public MovieController(MovieDBContext db, ILogger<MovieController> logger)
